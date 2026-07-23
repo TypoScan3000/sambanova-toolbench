@@ -1,0 +1,11 @@
+# Gitleaks config for toolbench. Extends the built-in default ruleset.
+title = "toolbench gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Google Sheet ID (identifier, not a credential)"
+paths = [
+  '''evaluator/google_sheets_evaluator\.py''',
+]
